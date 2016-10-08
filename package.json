@@ -1,0 +1,18 @@
+{
+  "name": "blotch_logo_project",
+  "version": "1.0.0",
+  "description": "Blotch Animated Logo",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "hogan": "^1.0.2",
+    "mustache":"^1.0.0",
+    "consolidate": "^0.14.0"
+    },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
