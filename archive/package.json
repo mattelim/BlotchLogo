@@ -1,0 +1,15 @@
+{
+  "name": "blotch_logo_project",
+  "version": "1.0.0",
+  "description": "Blotch Animated Logo",
+  "main": "index.js",
+  "dependencies": {
+    "vectorize-text": "3.0.2"
+    },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
