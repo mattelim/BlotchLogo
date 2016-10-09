@@ -58,7 +58,7 @@ function stopStart() {
 //*** interesting... loop interval can be LESS than animation duration
 
 function loop(){
-  $("#Layer_1 g g g").children("circle").each(function() {
+  $("#Layer_1").children("circle").each(function() {
     //var xpos = $(this).attr("cx");
     //var ypos = $(this).attr("cy");
     //console.log(transValue);
