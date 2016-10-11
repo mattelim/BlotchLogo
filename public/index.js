@@ -4,9 +4,12 @@
 var transValue = $("#scatter").val()/1;
 var radMin = $("#radminimum").val()/1;
 var radVar = $("#radmaximum").val() - radMin;
-var speedVar = speedVar = $("#speedvalue").val()/1;
+var speedVar = 3100 - $("#speedvalue").val();
 var isColor = $("#colorRand").prop("checked");
 //console.log(isColor);
+
+//storing DOM in cache
+var circleDOM = $("#Layer_1 g g g").children("circle");
 
 var intervalID;
 
@@ -30,7 +33,7 @@ $("#radmaximum").change(function() {
 });
 
 $("#speedvalue").change(function() {
-  speedVar = $("#speedvalue").val()/1;
+  speedVar = 3100 - $("#speedvalue").val();
   //console.log("speedvalue= " + speedVar);
   stopStart();
 });
@@ -75,7 +78,7 @@ function stopStart() {
 //*** interesting... loop interval can be LESS than animation duration
 
 function loop(){
-  $("#Layer_1 g g g").children("circle").each(function() {
+  circleDOM.each(function() {
     //var xpos = $(this).attr("cx");
     //var ypos = $(this).attr("cy");
     //console.log(transValue);
