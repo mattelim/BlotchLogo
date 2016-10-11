@@ -4,7 +4,8 @@
   </head>
   <body>
     <div id="mainContainer">
-      <a href="/2"><strong>Fill Version</strong></a>
+      <h2>Stroke Version</h2>
+      <a href="/2"><strong>(Change to Fill Version)</strong></a>
       <form>
         <p>
           Scatter
@@ -12,7 +13,7 @@
         </p>
         <p>
           Radius Minimum
-          <input type="range" name="radminimum" id="radminimum" min="0.0" max="5.0" value="0.25" step="0.05">
+          <input type="range" name="radminimum" id="radminimum" min="0.0" max="10.0" value="0.25" step="0.05">
         </p>
         <p>
           Radius Maximum
@@ -22,9 +23,17 @@
           Speed
           <input type="range" name="speedvalue" id="speedvalue" min="100" max="3000" value="1000" step="50">
         </p>
+        <p>
+          Change Color
+          <input type="checkbox" name="colorRand" id="colorRand">
+        </p>
       </form>
       <p>
         <a href="/">Reset</a>
+        <span> | </span>
+        <a id="pauseAnim" href="#">Pause</a>
+        <span> | </span>
+        <a id="playAnim" href="#">Play</a>
       </p>
     </div>
 

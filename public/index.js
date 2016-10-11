@@ -5,7 +5,8 @@ var transValue = $("#scatter").val()/1;
 var radMin = $("#radminimum").val()/1;
 var radVar = $("#radmaximum").val() - radMin;
 var speedVar = speedVar = $("#speedvalue").val()/1;
-var isColor = false;
+var isColor = $("#colorRand").prop("checked");
+//console.log(isColor);
 
 var intervalID;
 
@@ -32,6 +33,22 @@ $("#speedvalue").change(function() {
   speedVar = $("#speedvalue").val()/1;
   //console.log("speedvalue= " + speedVar);
   stopStart();
+});
+
+$("#colorRand").change(function() {
+  isColor = $("#colorRand").prop("checked");
+  //console.log(isColor);
+  stopStart();
+});
+
+//-----
+
+$("#pauseAnim").click(function() {
+  window.clearInterval(intervalID);
+});
+
+$("#playAnim").click(function() {
+  intervalID = window.setInterval(loop, speedVar);
 });
 
 //implement some way to change delay/decay time instead of "natural" increase?
