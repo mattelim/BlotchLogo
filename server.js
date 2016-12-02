@@ -14,6 +14,10 @@ app.set('views', 'templates'); // tell Express where to find templates
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
+  response.render('index2.html');
+});
+
+app.get('/2', function(request, response) {
   response.render('index1.html');
 });
 
