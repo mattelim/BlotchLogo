@@ -1,7 +1,7 @@
 {
-  "name": "blotch_logo_project",
+  "name": "ll_singaplural_webprototype",
   "version": "1.0.0",
-  "description": "Blotch Animated Logo",
+  "description": "Singaplural Stored Value Webprototype",
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
